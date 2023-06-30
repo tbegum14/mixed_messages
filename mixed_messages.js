@@ -5,7 +5,6 @@ const randomNum = (num)=>{
 
 const statementOne = ()=>{
     let x = randomNum(4)
-    console.log(x)
     switch (x){
         case 0:
             return "You are a "
@@ -27,7 +26,6 @@ const statementOne = ()=>{
  
 const statementTwo = ()=>{
     let x = randomNum(6)
-    console.log(x)
     switch (x){
         case 0:
             return "banana"
@@ -53,5 +51,21 @@ const statementTwo = ()=>{
     }
 }
 
-
-console.log(statementOne()+statementTwo())
+const statementThree = ()=>{
+    let x = randomNum(3)
+    switch (x){
+        case 0:
+            return " on holiday."
+            break;
+        case 1:
+            return " falling asleep."
+            break;
+        case 2:
+            return " up a tree."
+            break;
+        default:
+            return "error message"
+            break;        
+    }
+}
+console.log(statementOne()+statementTwo()+statementThree())
